@@ -4,10 +4,9 @@ export const profile = {
   name: 'Luca Ion',
   position: 'PhD researcher in quantum computing, focused on quantum algorithms and resource-efficient simulations.',
   bio: [
-    "I am a PhD researcher in quantum computing and quantum information, currently based in Valencia, Spain. My research focuses on quantum algorithms, with particular interest in ground-state preparation, variational and imaginary-time methods, and resource-efficient quantum simulations for near-term devices.",
-    "A key part of my work is connecting theory with practice—turning algorithmic ideas into concrete implementations and carefully analyzing their performance, scaling, and practical limitations. I regularly work with both classical simulations and quantum software frameworks to study circuit depth, noise effects, and measurement costs.",
-    "I primarily work in Python and use tools such as NumPy, SciPy, and Qiskit, with a strong emphasis on clean code, reproducibility, and transparent benchmarking. I actively maintain modular codebases and version-controlled research projects as part of my workflow."
+    "I am a PhD researcher in quantum computing based in Valencia, working on quantum algorithms and quantum machine learning. My focus is on translating theoretical ideas into practical implementations and benchmarking them under realistic constraints. I primarily work in Python with an emphasis on clean, reproducible research code.",
   ],
+  skills: ["Python", "NumPy", "SciPy", "Qiskit"],
   email: 'lucaion781@gmail.com',
   socials: [
     { name: 'Email', url: 'lucaion781@gmail.com', icon: Mail },

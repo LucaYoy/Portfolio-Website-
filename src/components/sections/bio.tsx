@@ -1,6 +1,8 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { profile } from '@/lib/data';
 import { FadeIn } from '@/components/shared/fade-in';
+import { Badge } from '@/components/ui/badge';
+import { Code } from 'lucide-react';
 
 export default function Bio() {
   return (
@@ -18,6 +20,19 @@ export default function Bio() {
                     {paragraph}
                   </p>
                 ))}
+              </div>
+              <div className="mt-8">
+                <h3 className="mb-4 text-center font-headline text-xl font-bold text-accent">
+                  My Toolkit
+                </h3>
+                <div className="flex flex-wrap justify-center gap-4">
+                  {profile.skills.map((skill) => (
+                    <Badge key={skill} variant="secondary" className="text-base px-4 py-2 flex items-center gap-2">
+                       <Code className="h-4 w-4" />
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
               </div>
             </CardContent>
           </Card>
