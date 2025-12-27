@@ -12,9 +12,13 @@ export default function Bio() {
               <h2 className="mb-8 text-center font-headline text-3xl font-bold tracking-tighter text-primary sm:text-4xl">
                 About Me
               </h2>
-              <p className="text-lg leading-relaxed text-muted-foreground text-center">
-                {profile.bio}
-              </p>
+              <div className="space-y-6 text-lg leading-relaxed text-muted-foreground text-center">
+                {profile.bio.map((paragraph, index) => (
+                  <p key={index}>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </CardContent>
           </Card>
         </FadeIn>

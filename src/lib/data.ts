@@ -1,15 +1,19 @@
 import { Github, Linkedin, Mail, GraduationCap, ExternalLink, FileText, Code } from 'lucide-react';
 
 export const profile = {
-  name: 'Luca Rossi',
-  position: 'AI Researcher & PhD Candidate',
-  bio: 'A passionate researcher at the intersection of machine learning and computational science. My work focuses on developing novel deep learning models for complex data analysis, with a strong background in both academic research and industry application. I thrive on solving challenging problems and pushing the boundaries of what AI can achieve.',
-  email: 'luca.rossi@example.com',
+  name: 'Luca Ion',
+  position: 'PhD researcher in quantum computing, focused on quantum algorithms and resource-efficient simulations.',
+  bio: [
+    "I am a dedicated PhD researcher at the forefront of quantum computing, with a specialized focus on the development and analysis of quantum algorithms. My work is driven by a passion for solving complex computational problems that are currently intractable for classical computers. I am particularly interested in creating resource-efficient quantum simulations, which have the potential to revolutionize materials science and drug discovery.",
+    "Throughout my academic journey, I have cultivated a deep understanding of quantum mechanics, information theory, and advanced computational techniques. My research involves both theoretical exploration and practical implementation, often utilizing frameworks like PyTorch for quantum-inspired machine learning models. I thrive in collaborative environments and am always eager to engage with fellow researchers to push the boundaries of scientific discovery.",
+    "Beyond my core research, I am a strong advocate for open-source science and enjoy developing tools that can be used by the wider community. This portfolio is a snapshot of my work, from academic publications to personal projects that showcase my skills and interests. I am constantly exploring new ideas and am excited about the future of quantum technology and its impact on the world."
+  ],
+  email: 'lucaion781@gmail.com',
   socials: [
-    { name: 'Email', url: 'mailto:luca.rossi@example.com', icon: Mail },
-    { name: 'LinkedIn', url: '#', icon: Linkedin },
-    { name: 'Google Scholar', url: '#', icon: GraduationCap },
-    { name: 'GitHub', url: '#', icon: Github },
+    { name: 'Email', url: 'lucaion781@gmail.com', icon: Mail },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/luca-petru-ion/', icon: Linkedin },
+    { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=-zQ-4YwAAAAJ&hl=en', icon: GraduationCap },
+    { name: 'GitHub', url: 'https://github.com/LucaYoy', icon: Github },
   ]
 };
 
