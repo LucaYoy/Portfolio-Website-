@@ -4,9 +4,9 @@ export const profile = {
   name: 'Luca Ion',
   position: 'PhD researcher in quantum computing, focused on quantum algorithms and resource-efficient simulations.',
   bio: [
-    "I am a dedicated PhD researcher at the forefront of quantum computing, with a specialized focus on the development and analysis of quantum algorithms. My work is driven by a passion for solving complex computational problems that are currently intractable for classical computers. I am particularly interested in creating resource-efficient quantum simulations, which have the potential to revolutionize materials science and drug discovery.",
-    "Throughout my academic journey, I have cultivated a deep understanding of quantum mechanics, information theory, and advanced computational techniques. My research involves both theoretical exploration and practical implementation, often utilizing frameworks like PyTorch for quantum-inspired machine learning models. I thrive in collaborative environments and am always eager to engage with fellow researchers to push the boundaries of scientific discovery.",
-    "Beyond my core research, I am a strong advocate for open-source science and enjoy developing tools that can be used by the wider community. This portfolio is a snapshot of my work, from academic publications to personal projects that showcase my skills and interests. I am constantly exploring new ideas and am excited about the future of quantum technology and its impact on the world."
+    "I am a PhD researcher in quantum computing and quantum information, currently based in Valencia, Spain. My research focuses on quantum algorithms, with particular interest in ground-state preparation, variational and imaginary-time methods, and resource-efficient quantum simulations for near-term devices.",
+    "A key part of my work is connecting theory with practice—turning algorithmic ideas into concrete implementations and carefully analyzing their performance, scaling, and practical limitations. I regularly work with both classical simulations and quantum software frameworks to study circuit depth, noise effects, and measurement costs.",
+    "I primarily work in Python and use tools such as NumPy, SciPy, and Qiskit, with a strong emphasis on clean code, reproducibility, and transparent benchmarking. I actively maintain modular codebases and version-controlled research projects as part of my workflow."
   ],
   email: 'lucaion781@gmail.com',
   socials: [
