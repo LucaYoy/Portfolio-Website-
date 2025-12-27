@@ -1,3 +1,10 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-photo",
+      "description": "A professional headshot of Luca Rossi.",
+      "imageUrl": "https://images.unsplash.com/photo-1554765345-6ad6a5417cde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3NjY3NzAwOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait man"
+    }
+  ]
 }
