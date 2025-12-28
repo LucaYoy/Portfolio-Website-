@@ -3,7 +3,7 @@
     {
       "id": "profile-photo",
       "description": "A professional headshot of Luca Rossi.",
-      "imageUrl": "https://i.imgur.com/7fH9a5s.jpeg",
+      "imageUrl": "/profile.jpeg",
       "imageHint": "professional portrait man"
     }
   ]
