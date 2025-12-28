@@ -9,8 +9,8 @@ export default function Hero() {
   const profilePhoto = PlaceHolderImages.find(p => p.id === 'profile-photo');
 
   return (
-    <section className="container grid grid-cols-1 items-center gap-12 py-12 md:py-24 lg:grid-cols-2 lg:py-32">
-      <FadeIn className="flex flex-col items-center text-center lg:items-start lg:text-left">
+    <section className="container grid h-screen grid-cols-1 items-center gap-12 py-12 md:py-24 lg:grid-cols-5 lg:py-32">
+      <FadeIn className="flex flex-col items-center text-center lg:col-span-3 lg:items-start lg:text-left">
         <div className="space-y-4">
           <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl lg:text-7xl">
             {profile.name}
@@ -30,14 +30,14 @@ export default function Hero() {
           ))}
         </div>
       </FadeIn>
-      <FadeIn className="flex justify-center">
+      <FadeIn className="flex justify-center lg:col-span-2">
         {profilePhoto && (
           <Image
             src={profilePhoto.imageUrl}
             alt={profilePhoto.description}
-            width={400}
-            height={400}
-            className="rounded-full border-4 border-primary/20 object-cover shadow-lg"
+            width={300}
+            height={300}
+            className="h-[300px] w-[300px] rounded-full border-4 border-primary/20 object-cover shadow-lg"
             priority
             data-ai-hint={profilePhoto.imageHint}
           />
