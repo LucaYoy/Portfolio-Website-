@@ -29,7 +29,7 @@ export const publications = [
     authors: 'Andreu Anglés-Castillo, Luca Ion, Tanmoy Pandit, Rafael Gomez-Lurbe, Rodrigo Martínez, Miguel Angel Garcia-March',
     venue: 'Journal of Chemical Information and Modeling, 2022',
     links: [
-      { name: 'PDF', url: 'https://arxiv.org/abs/2510.02015', icon: FileText },
+      { name: 'arXiv', url: 'https://arxiv.org/abs/2510.02015', icon: FileText },
     ]
   },
   {
