@@ -1,10 +1,10 @@
 import { Github, Linkedin, Mail, GraduationCap, ExternalLink, FileText, Code } from 'lucide-react';
 
 export const profile = {
-  name: 'Luca Ion',
+  name: "Hi, i'm Luca 👋",
   position: 'PhD researcher in quantum computing, focused on quantum algorithms and resource-efficient simulations.',
   bio: [
-    "I am a PhD researcher in quantum computing based in Valencia, working on quantum algorithms and quantum machine learning. My focus is on translating theoretical ideas into practical implementations and benchmarking them under realistic constraints. I primarily work in Python with an emphasis on clean, reproducible research code. 💻",
+    "PhD student at Universitat de Valencia, working on quantum algorithms and quantum machine learning. My focus is on translating theoretical ideas into practical implementations and benchmarking them under realistic constraints. Previously, I worked as a data scientist at BRD, where I focused on building various ML pipelines for different needs by the bank.",
   ],
   skills: ["Python", "NumPy",'Matplotlib', "Qiskit",'PennyLane'],
   email: 'lucaion781@gmail.com',
@@ -27,7 +27,6 @@ export const publications = [
   {
     title: 'Understanding Quantum Imaginary Time Evolution and its Variational form',
     authors: 'Andreu Anglés-Castillo, Luca Ion, Tanmoy Pandit, Rafael Gomez-Lurbe, Rodrigo Martínez, Miguel Angel Garcia-March',
-    venue: 'Journal of Chemical Information and Modeling, 2022',
     links: [
       { name: 'arXiv', url: 'https://arxiv.org/abs/2510.02015', icon: FileText },
     ]
@@ -44,28 +43,26 @@ export const publications = [
 
 export const projects = [
   {
-    title: 'Quantum-Inspired Neural Networks',
-    description: 'An exploration into neural network architectures inspired by principles of quantum mechanics. This project implements novel activation functions and entanglement-based layers in PyTorch.',
-    tags: ['PyTorch', 'Deep Learning', 'Research'],
+    title: 'NER for product names',
+    description: 'A short project where I fine tuned a NER huggingface model for furniture products detection. The goal of the model was to return the products on a furniture website. ',
+    tags: ['PyTorch', 'HuggingFace', 'NER'],
     links: [
-      { name: 'GitHub', url: '#', icon: Github },
-      { name: 'Demo', url: '#', icon: ExternalLink },
+      { name: 'GitHub', url: 'https://github.com/LucaYoy/NER-for-product-names', icon: Github },
     ]
   },
   {
-    title: 'Real-time Anomaly Detection in Sensor Networks',
-    description: 'A personal project to build a lightweight, deployable system for detecting anomalies in streaming sensor data using unsupervised learning techniques.',
-    tags: ['Python', 'Scikit-learn', 'IoT'],
+    title: 'RAG for Q&A on bank documentation',
+    description: 'Primary developer for this internal tool to be used by BRD bank employees. The main goal was to develop a Q&A tool specialized on internal bank documentation',
+    tags: ['Python', 'Scikit-learn', 'HuggingFace','Numpy','Pandas','RAG'],
     links: [
-      { name: 'GitHub', url: '#', icon: Github },
     ]
   },
   {
     title: 'Portfolio Website',
-    description: 'This very website, built with Next.js, Tailwind CSS, and shadcn/ui plus a bit of ai help for the web development :). Designed to be a clean, modern, and responsive showcase of my work.',
+    description: 'This very website, built with Next.js, Tailwind CSS, and shadcn/ui plus a bit of ai help for the web development 😄. Designed to be a clean, modern, and responsive showcase of my work.',
     tags: ['Next.js', 'React', 'Tailwind CSS'],
     links: [
-      { name: 'Source', url: '#', icon: Code },
+      { name: 'GitHub', url: 'https://github.com/LucaYoy/Portfolio-Website-', icon: Github },
     ]
   },
 ];
