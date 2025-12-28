@@ -4,7 +4,7 @@ export const profile = {
   name: 'Luca Ion',
   position: 'PhD researcher in quantum computing, focused on quantum algorithms and resource-efficient simulations.',
   bio: [
-    "I am a PhD researcher in quantum computing based in Valencia, working on quantum algorithms and quantum machine learning. My focus is on translating theoretical ideas into practical implementations and benchmarking them under realistic constraints. I primarily work in Python with an emphasis on clean, reproducible research code.",
+    "I am a PhD researcher in quantum computing based in Valencia, working on quantum algorithms and quantum machine learning. My focus is on translating theoretical ideas into practical implementations and benchmarking them under realistic constraints. I primarily work in Python with an emphasis on clean, reproducible research code. 💻",
   ],
   skills: ["Python", "NumPy",'Matplotlib', "Qiskit",'PennyLane'],
   email: 'lucaion781@gmail.com',
