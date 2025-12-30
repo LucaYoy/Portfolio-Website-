@@ -78,3 +78,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+.hero-typed {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-typed::after {
+  content: "⎸";              /* try: "│" or "▏" or "∣" */
+  display: inline-block;
+  margin-left: 0.08em;
+  transform: translateY(-0.02em);
+  opacity: 0.35;
+  font-weight: 300;
+  animation: hero-caret 1.2s infinite;
+}
+
+@keyframes hero-caret {
+  0% { opacity: 0; }
+  50% { opacity: 0.45; }
+  100% { opacity: 0; }
+}
+
