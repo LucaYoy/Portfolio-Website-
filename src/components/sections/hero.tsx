@@ -1,48 +1,53 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+'use client';
+
 import { profile } from '@/lib/data';
-import { FadeIn } from '@/components/shared/fade-in';
+import Socials from '@/components/shared/socials';
+import { FadeIn, FadeInStagger } from '@/components/shared/fade-in';
+import { TypeAnimation } from 'react-type-animation';
+import Image from 'next/image';
 
 export default function Hero() {
-  const profilePhoto = PlaceHolderImages.find(p => p.id === 'profile-photo');
-
   return (
-    <section className="container grid h-screen grid-cols-1 items-center gap-12 py-12 md:py-24 lg:grid-cols-5 lg:py-32">
-      <FadeIn className="flex flex-col items-center text-center lg:col-span-3 lg:items-start lg:text-left">
+    <section
+      id="home"
+      className="w-full min-h-[calc(100vh-4rem)] flex items-center justify-center bg-background"
+    >
+      <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-4">
-          <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl lg:text-7xl">
-            {profile.name}
-          </h1>
-          <p className="max-w-[700px] text-lg text-muted-foreground md:text-xl">
-            {profile.position}
-          </p>
+          <FadeInStagger>
+            <FadeIn>
+              <TypeAnimation
+                sequence={[
+                  profile.name,
+                  1000,
+                ]}
+                wrapper="h1"
+                speed={10}
+                className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl lg:text-7xl"
+              />
+            </FadeIn>
+            <FadeIn>
+              <p className="max-w-2xl mt-4 text-lg text-muted-foreground md:text-xl">
+                {profile.position}
+              </p>
+            </FadeIn>
+            <FadeIn>
+              <div className="mt-6">
+                <Socials />
+              </div>
+            </FadeIn>
+          </FadeInStagger>
         </div>
-        <div className="mt-6 flex gap-2">
-          {profile.socials.map((social) => (
-            <Button key={social.name} variant="outline" size="icon" asChild className="border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground">
-              <Link href={social.url} target="_blank" rel="noopener noreferrer">
-                <social.icon className="h-5 w-5" />
-                <span className="sr-only">{social.name}</span>
-              </Link>
-            </Button>
-          ))}
-        </div>
-      </FadeIn>
-      <FadeIn className="flex justify-center lg:col-span-2">
-        {profilePhoto && (
-          <Image
-            src={profilePhoto.imageUrl}
-            alt={profilePhoto.description}
+        <div className="flex justify-center items-center">
+           <Image
+            src="/profile.jpeg"
+            alt="Luca Petru Ion"
             width={300}
             height={300}
-            className="h-[300px] w-[300px] rounded-full border-4 border-primary/20 object-cover shadow-lg"
-            priority
-            data-ai-hint={profilePhoto.imageHint}
+            className="rounded-full object-cover w-[300px] h-[300px] border-4 border-primary/20 shadow-lg"
           />
-        )}
-      </FadeIn>
+        </div>
+      </div>
     </section>
   );
 }

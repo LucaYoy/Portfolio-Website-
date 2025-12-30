@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { profile } from '@/lib/data';
+import Socials from '@/components/shared/socials';
 
 export default function Footer() {
   return (
@@ -11,15 +10,8 @@ export default function Footer() {
             © {new Date().getFullYear()} Luca Petru Ion. All Rights Reserved.
           </p>
         </div>
-        <div className="flex items-center gap-2 md:ml-auto">
-          {profile.socials.map((social) => (
-            <Button key={social.name} variant="ghost" size="icon" asChild>
-              <Link href={social.url} target="_blank" rel="noopener noreferrer">
-                <social.icon className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
-                <span className="sr-only">{social.name}</span>
-              </Link>
-            </Button>
-          ))}
+        <div className="md:ml-auto">
+          <Socials />
         </div>
       </div>
     </footer>

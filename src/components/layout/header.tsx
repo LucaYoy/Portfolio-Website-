@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, Code } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navLinks } from "@/lib/data";
@@ -13,12 +13,16 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
-        <div className="mr-4 flex">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Code className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline">Luca Petru Ion</span>
+        <div className="mr-4 flex items-center">
+          <Link href="/" className="mr-6 flex items-center gap-2">
+            <span className="text-lg font-bold text-primary/80">
+              ψ
+            </span>
+            <span className="font-headline text-sm font-semibold tracking-tight">
+              Luca Petru Ion
+            </span>
           </Link>
-          <nav className="hidden gap-6 md:flex">
+          <nav className="hidden items-center gap-6 md:flex">
             {navLinks.map((link) => (
               <Link
                 key={link.name}

@@ -2,9 +2,9 @@ import { Github, Linkedin, Mail, GraduationCap, ExternalLink, FileText, Code } f
 
 export const profile = {
   name: "Hi, i'm Luca 👋",
-  position: 'PhD researcher in quantum computing, focused on quantum algorithms and resource-efficient simulations.',
+  position: 'Marie Skłodowska-Curie PhD Fellow in quantum computing, working on quantum algorithms and resource-efficient simulation, with interests in AI/ML and real-world industry applications.',
   bio: [
-    "PhD student at Universitat de Valencia, working on quantum algorithms and quantum machine learning. My focus is on translating theoretical ideas into practical implementations and benchmarking them under realistic constraints. Previously, I worked as a data scientist at BRD, where I focused on building various ML pipelines for different needs by the bank.",
+    'I am a <strong>PhD student</strong> at <a href="https://www.uv.es/uvweb/physics/en/faculty-physics-1285850062061.html" class="text-primary font-bold hover:no-underline">Universitat de Valencia</a>, working on <strong>quantum algorithms</strong> and <strong>quantum machine learning</strong>. My focus is on translating theoretical ideas into practical implementations and benchmarking them under realistic constraints. Previously, I worked as a <strong>data scientist</strong> at <a href="https://www.brd.ro/" class="text-primary font-bold hover:no-underline">BRD</a>, where I focused on building various ML pipelines for different needs by the bank.',
   ],
   skills: ["Python", "NumPy",'Matplotlib', "Qiskit",'PennyLane'],
   email: 'lucaion781@gmail.com',
@@ -32,11 +32,10 @@ export const publications = [
     ]
   },
   {
-    title: 'Interpretable AI for High-Stakes Decision Making in Physics',
-    authors: 'S. Lee, L. Rossi, M. Williams',
-    venue: 'NeurIPS 2021 Workshop on Machine Learning and the Physical Sciences',
+    title: 'Variational quantum eigensolver for chemical molecules',
+    authors: 'Luca Ion, Adam Smith',
     links: [
-      { name: 'arXiv', url: '#', icon: FileText },
+      { name: 'arXiv', url: 'https://arxiv.org/abs/2512.22572', icon: FileText },
     ]
   },
 ];
