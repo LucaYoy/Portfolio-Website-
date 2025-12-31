@@ -4,9 +4,9 @@ export const profile = {
   name: "Hi, i'm Luca 👋",
   position: 'Marie Skłodowska-Curie PhD Fellow in quantum computing, working on quantum algorithms and resource-efficient simulation, with interests in AI/ML and real-world industry applications.',
   bio: [
-    'I am a <strong>PhD student</strong> at <a href="https://www.uv.es/uvweb/physics/en/faculty-physics-1285850062061.html" class="text-primary font-bold hover:no-underline">Universitat de Valencia</a>, working on <strong>quantum algorithms</strong> and <strong>quantum machine learning</strong>. My focus is on translating theoretical ideas into practical implementations and benchmarking them under realistic constraints. Previously, I worked as a <strong>data scientist</strong> at <a href="https://www.brd.ro/" class="text-primary font-bold hover:no-underline">BRD</a>, where I focused on building various ML pipelines for different needs by the bank.',
+    'I am a PhD researcher in quantum computing based in Valencia, working on quantum algorithms and quantum machine learning. My focus is on translating theoretical ideas into practical implementations and benchmarking them under realistic constraints. 💻'
   ],
-  skills: ["Python", "NumPy",'Matplotlib', "Qiskit",'PennyLane'],
+  skills: ["Python", "NumPy", "SciPy", "Qiskit", 'PennyLane', 'Matplotlib'],
   email: 'lucaion781@gmail.com',
   socials: [
     { name: 'Email', url: 'lucaion781@gmail.com', icon: Mail },
