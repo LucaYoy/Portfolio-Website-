@@ -1,7 +1,7 @@
 import { Github, Linkedin, Mail, GraduationCap, ExternalLink, FileText, Code } from 'lucide-react';
 
 export const profile = {
-  name: "Hi, i'm Luca 👋",
+  name: "Hi, i'm Luca",
   position: 'Marie Skłodowska-Curie PhD Fellow in quantum computing, working on quantum algorithms and resource-efficient simulation, with interests in AI/ML and real-world industry applications.',
   bio: [
     'I am a PhD researcher in quantum computing based in Valencia, working on quantum algorithms and quantum machine learning. My focus is on translating theoretical ideas into practical implementations and benchmarking them under realistic constraints. 💻'
