@@ -102,13 +102,19 @@
 
 @keyframes float-subtle {
   0% {
-    transform: translateY(0) translate(var(--repulsion-x, 0px), var(--repulsion-y, 0px));
+    transform: translate(0, 0) translate(var(--repulsion-x, 0px), var(--repulsion-y, 0px));
+  }
+  25% {
+    transform: translate(5px, -15px) translate(var(--repulsion-x, 0px), var(--repulsion-y, 0px));
   }
   50% {
-    transform: translateY(-15px) translate(var(--repulsion-x, 0px), var(--repulsion-y, 0px));
+    transform: translate(-5px, -5px) translate(var(--repulsion-x, 0px), var(--repulsion-y, 0px));
+  }
+  75% {
+    transform: translate(5px, -10px) translate(var(--repulsion-x, 0px), var(--repulsion-y, 0px));
   }
   100% {
-    transform: translateY(0) translate(var(--repulsion-x, 0px), var(--repulsion-y, 0px));
+    transform: translate(0, 0) translate(var(--repulsion-x, 0px), var(--repulsion-y, 0px));
   }
 }
 

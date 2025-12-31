@@ -104,8 +104,8 @@ export default function Hero() {
 
     const symbolData = new Map(symbols.map(s => {
       const rect = s.ref.current!.getBoundingClientRect();
-      const centerX = rect.left + rect.width / 2;
-      const centerY = rect.top + rect.height / 2;
+      const centerX = rect.left + window.scrollX + rect.width / 2;
+      const centerY = rect.top + window.scrollY + rect.height / 2;
       return [s.id, {
         ref: s.ref.current!,
         anchorX: centerX,
@@ -125,8 +125,8 @@ export default function Hero() {
         e.clientY >= rect.top &&
         e.clientY <= rect.bottom;
       
-      pointer.x = e.clientX;
-      pointer.y = e.clientY;
+      pointer.x = e.pageX;
+      pointer.y = e.pageY;
     };
 
     let animationFrameId: number;
@@ -195,9 +195,9 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative w-full h-[calc(100vh-4rem)] flex items-center justify-center bg-background"
+      className="relative w-full h-auto min-h-[calc(100vh-4rem)] flex flex-col md:flex-row items-center justify-center bg-background"
     >
-      <div className="container">
+      <div className="container relative z-10 text-center md:text-left">
         <FadeInStagger>
           <FadeIn>
           <TypeAnimation
@@ -213,19 +213,26 @@ export default function Hero() {
           />
           </FadeIn>
           <FadeIn>
-            <p className="max-w-2xl mt-4 text-lg text-muted-foreground md:text-xl">
+            <p className="max-w-2xl mx-auto md:mx-0 mt-4 text-lg text-muted-foreground md:text-xl">
               {profile.position}
             </p>
           </FadeIn>
           <FadeIn>
-            <div className="mt-6">
+            <div className="mt-6 flex justify-center md:justify-start">
               <Socials />
             </div>
           </FadeIn>
         </FadeInStagger>
       </div>
       {isMounted && (
-        <div ref={containerRef} className="absolute inset-y-0 right-0 w-1/2 pointer-events-none hidden md:block">
+        <div 
+          ref={containerRef} 
+          className="
+            relative w-full h-64
+            md:absolute md:inset-y-0 md:right-0 md:w-1/2 md:h-full 
+            pointer-events-none
+          "
+        >
           <PsiSymbol ref={symbol1Ref} className="float-symbol symbol-1" />
           <LossSymbol ref={symbol2Ref} className="float-symbol symbol-2" />
           <HbarSymbol ref={symbol3Ref} className="float-symbol symbol-3" />

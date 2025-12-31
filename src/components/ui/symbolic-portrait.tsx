@@ -13,7 +13,7 @@ type PlacedSymbol = {
 };
 
 const SYMBOL_TOKENS = [
-  "⟨ψ|", "|ψ⟩", "∑", "⊗", "e^{-iHt}", "Tr", "σx", "σy", "σz",
+  "⟨ψ|", "|ψ⟩", "∑", "e^{-iHt}", "Tr", "σx", "σy", "σz",
   "∇", "argmin", "ℒ(θ)", "f(x)", "∂", "∫",
 ];
 
