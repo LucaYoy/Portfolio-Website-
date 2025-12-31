@@ -100,3 +100,46 @@
   100% { opacity: 0; }
 }
 
+@keyframes float-subtle {
+  0% {
+    transform: translateY(0) translate(var(--repulsion-x, 0px), var(--repulsion-y, 0px));
+  }
+  50% {
+    transform: translateY(-15px) translate(var(--repulsion-x, 0px), var(--repulsion-y, 0px));
+  }
+  100% {
+    transform: translateY(0) translate(var(--repulsion-x, 0px), var(--repulsion-y, 0px));
+  }
+}
+
+.float-symbol {
+  --repulsion-x: 0px;
+  --repulsion-y: 0px;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  color: hsl(var(--primary));
+  opacity: 0.08;
+  animation: float-subtle infinite;
+  transition: transform 0.1s ease-out;
+}
+
+.symbol-1 {
+  top: 20%;
+  right: 40%;
+  animation-duration: 8s;
+}
+
+.symbol-2 {
+  top: 60%;
+  right: 15%;
+  width: 7rem;
+  height: 7rem;
+  animation-duration: 12s;
+}
+
+.symbol-3 {
+  top: 60%;
+  right: 65%;
+  animation-duration: 10s;
+}
