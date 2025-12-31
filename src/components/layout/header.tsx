@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { navLinks } from "@/lib/data";
 
 export default function Header() {
@@ -46,6 +46,8 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetTitle className="sr-only">Navigation</SheetTitle>
+              <SheetDescription className="sr-only">Main navigation links for the website.</SheetDescription>
               <div className="mt-8 flex flex-col space-y-4">
                 {navLinks.map((link) => (
                   <Link
