@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { createContext, useContext, useState, useEffect, useRef, type ReactNode, type ElementRef } from 'react';
+import { createContext, useContext, useState, useEffect, useRef, type ReactNode, type ElementRef, CSSProperties } from 'react';
 import { cn } from '@/lib/utils';
 
 const FadeInStaggerContext = createContext(false);
@@ -9,12 +9,10 @@ const viewportOptions = { rootMargin: '0px 0px -200px' };
 
 export function FadeInStagger({
   children,
-  faster = false,
   className,
   ...props
 }: {
   children: ReactNode;
-  faster?: boolean;
   className?: string;
 }) {
   const [isVisible, setVisible] = useState(false);
@@ -45,10 +43,7 @@ export function FadeInStagger({
     <FadeInStaggerContext.Provider value={isVisible}>
       <div
         ref={domRef}
-        className={cn(
-          "flex flex-col gap-4", // Adjust gap as needed
-          className
-        )}
+        className={className}
         {...props}
       >
         {children}
@@ -61,9 +56,10 @@ type FadeInProps = {
   children: ReactNode;
   className?: string;
   as?: keyof JSX.IntrinsicElements;
+  delay?: number;
 };
 
-export function FadeIn({ children, className, as = 'div' }: FadeInProps) {
+export function FadeIn({ children, className, as = 'div', delay = 0 }: FadeInProps) {
   const isStaggered = useContext(FadeInStaggerContext);
   const [isVisible, setVisible] = useState(false);
   const domRef = useRef<ElementRef<typeof as> | null>(null);
@@ -71,7 +67,6 @@ export function FadeIn({ children, className, as = 'div' }: FadeInProps) {
 
   useEffect(() => {
     if (isStaggered) {
-      // Visibility is controlled by the parent stagger component
       setVisible(isStaggered);
       return;
     }
@@ -101,14 +96,15 @@ export function FadeIn({ children, className, as = 'div' }: FadeInProps) {
     <Tag
       ref={domRef}
       className={cn(
-        'transition-all duration-1000 ease-out',
+        'transition-all duration-[1200ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]',
         'will-change-[opacity,transform]',
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
         'motion-reduce:transition-none',
-        '[&>*:last-child]:transition-all',
-        isStaggered && 'transition-opacity delay-[var(--stagger-delay,0)]',
         className
       )}
+      style={{ 
+        transitionDelay: isVisible ? `${delay}ms` : '0ms' 
+      } as CSSProperties}
     >
       {children}
     </Tag>
