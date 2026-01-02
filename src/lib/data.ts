@@ -9,7 +9,7 @@ export const profile = {
   skills: ["Python", "NumPy", "SciPy", "Qiskit", 'PennyLane', 'Matplotlib'],
   email: 'lucaion781@gmail.com',
   socials: [
-    { name: 'Email', url: 'lucaion781@gmail.com', icon: Mail },
+    { name: 'Email', url: 'mailto:lucaion781@gmail.com', icon: Mail },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/luca-petru-ion/', icon: Linkedin },
     { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=-zQ-4YwAAAAJ&hl=en', icon: GraduationCap },
     { name: 'GitHub', url: 'https://github.com/LucaYoy', icon: Github },
