@@ -6,7 +6,7 @@ export const profile = {
   bio: [
     'I am a <strong>PhD student</strong> at <a href="https://www.uv.es/uvweb/physics/en/faculty-physics-1285850062061.html" class="text-primary font-bold hover:no-underline">Universitat de Valencia</a>, working on <strong>quantum algorithms</strong> and <strong>quantum machine learning</strong>. My focus is on translating theoretical ideas into practical implementations and benchmarking them under realistic constraints. Previously, I worked as a <strong>data scientist</strong> at <a href="https://www.brd.ro/" class="text-primary font-bold hover:no-underline">BRD</a>, where I focused on building various ML pipelines for different needs by the bank.',
   ],
-  skills: ["Python", "NumPy", "SciPy", "Qiskit", 'PennyLane', 'Matplotlib'],
+  skills: ["Python", "NumPy", "Qiskit", 'PennyLane', 'Matplotlib','Scikit-learn'],
   email: 'lucaion781@gmail.com',
   socials: [
     { name: 'Email', url: 'mailto:lucaion781@gmail.com', icon: Mail },
@@ -64,7 +64,7 @@ export const projects = [
   },
   {
     title: 'Portfolio Website',
-    description: 'This very website, built with Next.js, Tailwind CSS, and shadcn/ui plus a bit of ai help for the web development 😄. Designed to be a clean, modern, and responsive showcase of my work.',
+    description: 'This very website, built with Next.js, Tailwind CSS, and shadcn/ui plus a bit of ai help for the web development. Designed to be a clean, modern, and responsive showcase of my work.',
     tags: ['Next.js', 'React', 'Tailwind CSS'],
     links: [
       { name: 'GitHub', url: 'https://github.com/LucaYoy/Portfolio-Website-', icon: Github },

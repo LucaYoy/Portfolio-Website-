@@ -11,7 +11,7 @@ export default function Projects() {
       <div className="container">
         <FadeIn>
           <h2 className="mb-12 text-center font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Projects
+            Projects 🧑‍💻
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (

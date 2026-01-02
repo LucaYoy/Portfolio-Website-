@@ -9,7 +9,7 @@ export default function Publications() {
     <section id="publications" className="container py-12 md:py-24 lg:py-32">
       <FadeIn>
         <h2 className="mb-12 text-center font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-          Publications
+          Publications 📝
         </h2>
         <div className="mx-auto grid max-w-4xl gap-8">
           {publications.map((pub, index) => (
@@ -19,7 +19,6 @@ export default function Publications() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">{pub.authors}</p>
-                <p className="mt-1 text-sm font-medium">{pub.venue}</p>
               </CardContent>
               <CardFooter className="flex gap-2">
                 {pub.links.map(link => (
