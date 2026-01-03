@@ -3,8 +3,11 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Luca Portfolio',
+  title: 'Luca',
   description: 'Personal portfolio for Luca Rossi, AI Researcher & PhD Candidate.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
